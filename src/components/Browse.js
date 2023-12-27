@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from './Header'
 
 const Browse = () => {
   return (
-    <div className="text-red-400 font-bold">Browse</div>
+    <div className="">
+      <Header />
+      Browse
+      </div>
   )
 }
 
