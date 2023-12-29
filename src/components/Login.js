@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice"
-import { USER_AVATAR } from "../utils/constants"
+import { USER_AVATAR, BG_URL } from "../utils/constants"
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -80,8 +80,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt="logo"
+          src={BG_URL} alt="logo"
         />
       </div>
       <form
